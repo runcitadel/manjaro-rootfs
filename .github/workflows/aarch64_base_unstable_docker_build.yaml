@@ -98,7 +98,7 @@ jobs:
         name: install-manjaro-arm-tools
         shell: bash
         run: |
-          sudo git clone https://gitlab.manjaro.org/manjaro-arm/applications/manjaro-arm-tools.git
+          sudo git clone https://github.com/runcitadel/manjaro-arm-tools.git
           install_m_a_tools() {
               pkgname=manjaro-arm-tools
               sudo install -dm777 /usr/share/$pkgname/lib

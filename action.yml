@@ -4,7 +4,7 @@ inputs:
   arm-profiles-repo:
     description: 'arm-profiles to clone'
     required: false
-    default: 'https://gitlab.manjaro.org/manjaro-arm/applications/arm-profiles'
+    default: 'https://github.com/runcitadel/manjaro-arm-profiles'
   device:
     description: 'name of the device the build is for'
     required: true
@@ -135,7 +135,7 @@ runs:
       name: install-manjaro-arm-tools
       shell: bash
       run: |
-        sudo git clone https://gitlab.manjaro.org/manjaro-arm/applications/manjaro-arm-tools.git
+        sudo git clone https://github.com/runcitadel/manjaro-arm-tools.git
         install_m_a_tools() {
             pkgname=manjaro-arm-tools
             sudo install -dm777 /usr/share/$pkgname/lib
